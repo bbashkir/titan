@@ -1,0 +1,83 @@
+2026-08-16 08:20:40 | INFO     | database.models        | База данных инициализирована: /app/data/alloys.db
+2026-08-16 08:20:41 | INFO     | database.models        | База данных инициализирована: /app/data/alloys.db
+2026-08-16 08:20:41 | INFO     | parser.scraper         | ======================================================================
+2026-08-16 08:20:41 | INFO     | parser.scraper         | Запуск парсинга. Источники: reference, semantic_scholar
+2026-08-16 08:20:41 | INFO     | parser.scraper         | ----------------------------------------------------------------------
+2026-08-16 08:20:41 | INFO     | parser.scraper         | Источник: Справочные данные (ГОСТ 19807-91, ОСТ 1 90013-81, ASM Handbook)
+2026-08-16 08:20:41 | INFO     | parser.scraper         | [reference] Подготовлено записей: 47
+2026-08-16 08:20:42 | INFO     | parser.scraper         | Источник reference: добавлено новых — 47, новых вариантов состава — 0, пропущено дублей — 0
+2026-08-16 08:20:42 | INFO     | parser.scraper         | ----------------------------------------------------------------------
+2026-08-16 08:20:42 | INFO     | parser.scraper         | Источник: Semantic Scholar (открытые публикации)
+2026-08-16 08:20:42 | WARNING  | parser.scraper         | [semantic_scholar] Не задан ключ API (config.SEMANTIC_SCHOLAR_API_KEY или переменная окружения SEMANTIC_SCHOLAR_API_KEY). Сервис отвечает 403 Forbidden на запросы без ключа — источник пропущен. Бесплатный ключ: https://www.semanticscholar.org/product/api
+2026-08-16 08:20:42 | INFO     | parser.scraper         | Источник semantic_scholar: добавлено новых — 0, новых вариантов состава — 0, пропущено дублей — 0
+2026-08-16 08:20:42 | INFO     | parser.scraper         | ======================================================================
+2026-08-16 08:20:42 | INFO     | parser.scraper         | ИТОГ ПАРСИНГА: собрано 47 записей | добавлено новых: 47 | новых вариантов: 0 | пропущено дублей: 0 | источников с ошибкой: 0
+2026-08-16 08:20:45 | INFO     | database.models        | База данных инициализирована: /app/data/alloys.db
+2026-08-16 08:20:45 | INFO     | database.models        | База данных инициализирована: /app/data/alloys.db
+2026-08-16 08:20:45 | INFO     | ml.features            | Загружено записей для обучения: 47
+2026-08-16 08:20:45 | INFO     | ml.similarity_model    | Свойство density: обучен Random Forest на 47 примерах (R²=0.886)
+2026-08-16 08:20:45 | INFO     | ml.similarity_model    | Свойство melting_point: обучен Random Forest на 44 примерах (R²=0.879)
+2026-08-16 08:20:45 | INFO     | ml.similarity_model    | Свойство tensile_strength: обучен Random Forest на 47 примерах (R²=0.973)
+2026-08-16 08:20:46 | INFO     | ml.similarity_model    | Свойство yield_strength: обучен Random Forest на 47 примерах (R²=0.976)
+2026-08-16 08:20:46 | INFO     | ml.similarity_model    | Свойство elastic_modulus: обучен Random Forest на 46 примерах (R²=0.908)
+2026-08-16 08:20:46 | INFO     | ml.similarity_model    | Свойство hardness_brinell: обучен Random Forest на 46 примерах (R²=0.982)
+2026-08-16 08:20:47 | INFO     | ml.similarity_model    | Свойство thermal_conductivity: обучен Random Forest на 40 примерах (R²=0.939)
+2026-08-16 08:20:47 | INFO     | ml.similarity_model    | Свойство fatigue_strength: обучен Random Forest на 43 примерах (R²=0.969)
+2026-08-16 08:20:47 | INFO     | ml.similarity_model    | Модель поиска похожих обучена на 47 записях
+2026-08-16 08:20:48 | INFO     | ml.generative_model    | Классификатор коррозионной стойкости обучен на 47 примерах
+2026-08-16 08:20:52 | INFO     | ml.generative_model    | VAE, эпоха 100/400: функция потерь = 0.60701
+2026-08-16 08:20:56 | INFO     | ml.generative_model    | VAE, эпоха 200/400: функция потерь = 0.57484
+2026-08-16 08:20:59 | INFO     | ml.generative_model    | VAE, эпоха 300/400: функция потерь = 0.55131
+2026-08-16 08:21:03 | INFO     | ml.generative_model    | VAE, эпоха 400/400: функция потерь = 0.53884
+2026-08-16 08:21:03 | INFO     | ml.generative_model    | VAE обучен: 400 эпох, 1927 обучающих векторов, итоговая потеря 0.53884
+2026-08-16 08:21:03 | INFO     | ml.generative_model    | Веса VAE сохранены: /app/data/vae_model.pt
+2026-08-16 08:21:19 | INFO     | ml.generative_model    | Сгенерировано корректных составов: 36, отобрано: 3
+2026-08-16 08:21:19 | INFO     | reports.pdf_generator  | Шрифт отчёта: /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf
+2026-08-16 08:21:19 | INFO     | reports.pdf_generator  | PDF-отчёт сохранён: /app/reports/output/titanium_report_20260816_082119.pdf
+2026-08-16 08:21:36 | INFO     | ml.generative_model    | Сгенерировано корректных составов: 36, отобрано: 3
+2026-08-16 08:21:36 | INFO     | reports.pdf_generator  | PDF-отчёт сохранён: /app/reports/output/titanium_report_20260816_082136.pdf
+2026-08-16 08:23:06 | INFO     | database.models        | База данных инициализирована: /app/data/alloys.db
+2026-08-16 08:23:09 | INFO     | database.models        | База данных инициализирована: /app/data/alloys.db
+2026-08-16 08:23:09 | INFO     | database.models        | База данных инициализирована: /app/data/alloys.db
+2026-08-16 08:23:09 | INFO     | ml.features            | Загружено записей для обучения: 47
+2026-08-16 08:23:09 | INFO     | ml.similarity_model    | Свойство density: обучен Random Forest на 47 примерах (R²=0.886)
+2026-08-16 08:23:10 | INFO     | ml.similarity_model    | Свойство melting_point: обучен Random Forest на 44 примерах (R²=0.879)
+2026-08-16 08:23:10 | INFO     | ml.similarity_model    | Свойство tensile_strength: обучен Random Forest на 47 примерах (R²=0.973)
+2026-08-16 08:23:10 | INFO     | ml.similarity_model    | Свойство yield_strength: обучен Random Forest на 47 примерах (R²=0.976)
+2026-08-16 08:23:10 | INFO     | ml.similarity_model    | Свойство elastic_modulus: обучен Random Forest на 46 примерах (R²=0.908)
+2026-08-16 08:23:11 | INFO     | ml.similarity_model    | Свойство hardness_brinell: обучен Random Forest на 46 примерах (R²=0.982)
+2026-08-16 08:23:11 | INFO     | ml.similarity_model    | Свойство thermal_conductivity: обучен Random Forest на 40 примерах (R²=0.939)
+2026-08-16 08:23:11 | INFO     | ml.similarity_model    | Свойство fatigue_strength: обучен Random Forest на 43 примерах (R²=0.969)
+2026-08-16 08:23:12 | INFO     | ml.similarity_model    | Модель поиска похожих обучена на 47 записях
+2026-08-16 08:23:12 | INFO     | ml.generative_model    | Классификатор коррозионной стойкости обучен на 47 примерах
+2026-08-16 08:23:17 | INFO     | ml.generative_model    | VAE, эпоха 100/400: функция потерь = 0.60701
+2026-08-16 08:23:20 | INFO     | ml.generative_model    | VAE, эпоха 200/400: функция потерь = 0.57484
+2026-08-16 08:23:24 | INFO     | ml.generative_model    | VAE, эпоха 300/400: функция потерь = 0.55131
+2026-08-16 08:23:28 | INFO     | ml.generative_model    | VAE, эпоха 400/400: функция потерь = 0.53884
+2026-08-16 08:23:28 | INFO     | ml.generative_model    | VAE обучен: 400 эпох, 1927 обучающих векторов, итоговая потеря 0.53884
+2026-08-16 08:23:28 | INFO     | ml.generative_model    | Веса VAE сохранены: /app/data/vae_model.pt
+2026-08-16 08:28:57 | INFO     | ml.generative_model    | Сгенерировано корректных составов: 36, отобрано: 3
+2026-08-16 08:29:12 | INFO     | reports.pdf_generator  | Шрифт отчёта: /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf
+2026-08-16 08:29:12 | INFO     | reports.pdf_generator  | PDF-отчёт сохранён: /app/reports/output/titanium_report_20260816_082912.pdf
+2026-09-03 08:19:27 | ERROR    | main                   | Необработанная ошибка: No module named 'bs4'
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\dplm\titanium-alloys-ml\main.py", line 170, in main
+    cmd_parse()
+    ~~~~~~~~~^^
+  File "C:\Users\User\Desktop\dplm\titanium-alloys-ml\main.py", line 33, in cmd_parse
+    from parser.scraper import run_parsing
+  File "C:\Users\User\Desktop\dplm\titanium-alloys-ml\parser\scraper.py", line 29, in <module>
+    from bs4 import BeautifulSoup
+ModuleNotFoundError: No module named 'bs4'
+2026-09-03 08:19:43 | ERROR    | main                   | Необработанная ошибка: No module named 'sqlalchemy'
+Traceback (most recent call last):
+  File "C:\Users\User\Desktop\dplm\titanium-alloys-ml\main.py", line 185, in main
+    cmd_console()
+    ~~~~~~~~~~~^^
+  File "C:\Users\User\Desktop\dplm\titanium-alloys-ml\main.py", line 119, in cmd_console
+    from database.models import get_stats, init_db, session_scope
+  File "C:\Users\User\Desktop\dplm\titanium-alloys-ml\database\models.py", line 15, in <module>
+    from sqlalchemy import (
+    ...<10 lines>...
+    )
+ModuleNotFoundError: No module named 'sqlalchemy'
